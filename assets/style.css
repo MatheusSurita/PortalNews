@@ -1,0 +1,510 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+header{
+    padding: 8px 0;
+   
+    background-color: rgb(96, 15, 201);
+}
+
+.center{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+} 
+.logo {
+    width: 50%;
+    margin-top: 10px;
+    text-align: left;
+}
+.logo h2{
+  font-weight: 700;
+   font-size: 25px;
+   color: white;
+}
+
+.form-buscas{
+    width: 50%;
+    margin-top: 10px;
+    text-align: right;
+} 
+.author{
+    position: relative;
+    top:30px;
+    left: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+    font-style: oblique;
+}
+
+.form-buscas form{
+display: inline-block;
+position: relative;
+}
+
+.span{
+    font-weight: 300;
+}
+.form-buscas input{
+  height: 40px;
+  width: 100px;
+  border: 0;
+  outline: none;
+  background-color: rgb(111, 47, 194);
+  padding-left: 29px;
+  border-radius: 5px;  
+  font-size: 20px;
+  color: white;
+}
+
+.form-buscas i{
+    cursor: pointer;
+    position: absolute;
+    left: 4px;
+    top: 10px;
+    color: white;
+    font-size: 20px;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+  }
+  section.noticias_destaque{
+      padding: 40px 0;
+  }
+
+  
+  section.noticias_destaque > .center{
+      max-width: 960px;
+      
+  }
+  .img-destaque{
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+}
+
+  .img-destaque img{
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.title-destaque-description{
+    position: absolute;
+    bottom:0px;
+    left: 0;
+    padding: 40px;
+    max-width: 600px;
+    color: white;
+    z-index: 2;
+}
+
+
+.title-destaque-description h2{
+    font-size: 54px;
+    margin:20px 0;
+
+}
+
+.title-destaque-description p{
+    font-size: 16px;
+    font-weight: lighter;
+    
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    border-radius: 20px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.288);
+    z-index: 1;
+}
+
+section.outras-noticias{
+    background-color: purple;
+    padding: 30px 20px;
+    text-align: center;
+   
+}
+
+section.outras-noticias h2{
+ font-size: 54px;
+ color: white;
+
+}
+
+.header-painel{
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(211, 82, 8);
+    color: rgb(240, 240, 240);
+}
+
+section.outras-noticia > .center{
+    max-width: 1280px;
+}
+.form-painel{
+    flex-direction: row;
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0 ;
+}
+.form-painel input[type="text"]{
+    width: 100%;
+    height: 40px;
+    font-size: 30px;
+    outline: none;
+    color: white;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgb(119, 0, 255);
+    border-radius: 10px;
+    border: none;
+}
+.form-painel input[type="submit"]{
+    text-align: center;
+    font-size: 40px;
+    width: 100%;
+    height: 60px;
+    outline: none;
+    color: white;
+    margin-top: 10px;
+    background-color: rgb(119, 0, 255);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.form-painel textarea{
+    outline: none;
+    font-size: 25px;
+    color: white;
+    width: 100%;
+    height: 250px;
+    padding: 10px;
+    resize: none;
+    background-color: rgb(119, 0, 255);
+    border: none;
+    border-radius: 10px;
+
+
+}
+
+.form-painel textarea:focus,
+.form-painel input:focus,
+.form-painel input:hover,
+.form-painel textarea:hover{
+    border: 2px solid rgb(197, 58, 3);
+
+}
+
+
+
+ .ultimas{
+     width: 60%;
+     padding:0 10px;
+     display: flex;
+     flex-wrap: wrap;
+
+ }
+
+ .box-ultima-single{
+ margin-bottom: 10px;
+    text-align: left;
+     width: 48%;
+     border-radius: 10px;
+     margin-right: 2%;
+     background-color: white;
+     padding-bottom: 20px;
+     height: 550px;
+ }
+ .mais_lidas{
+     width: 40%;
+    background-color: white;
+    height: 100%;
+    border-radius:30px ;
+
+ }
+
+ .noticias-painel-single{
+     margin-top: 10px;
+     width: 100%;
+     display: inline-block;
+     border-bottom:2px dashed #ccc  ;
+     padding: 10px;
+     display: flex;
+     justify-content: space-around;
+ }
+
+ .noticias-painel-single p {
+     font-size: 25px;
+     color: black;
+
+ }
+
+ .noticias-painel-single a {
+    font-size: 25px;
+    color:red;
+    text-decoration: none;
+ }
+.mais_lidas .title h3{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 10px 8px ;
+    border-top-left-radius:20px ;
+    border-top-right-radius:20px ;
+    background-color: blueviolet;
+}
+
+.box-ultima-single  img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+}
+
+.conteudo{
+padding: 20px;
+}
+.conteudo h3{
+font-size: 20px;
+font-weight: 300;
+    
+}
+
+.conteudo  h2{
+    font-size: 25px !important;
+    color: black !important;
+}
+
+.conteudo p{
+    margin-bottom: 20px;
+}
+
+.login-painel{
+    flex-direction: row;
+    width: 100%;
+    height: 824px;
+}
+.login-painel form{
+    margin-top: 20%;
+    margin-left: 40%;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.575);
+    border-radius:10px ;
+
+}
+.login-painel input[type="text"]{
+    margin-top: 10px;
+    background-color: rgba(255, 0, 221, 0.521);
+    width: 200px;
+    margin-bottom: 10px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 10px;
+}
+.login-painel input[type="password"]{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: rgba(225, 0, 255, 0.521);
+    width: 200px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 10px;
+}
+
+.login-painel input[type="submit"]{
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    background-color: crimson;
+    border: none;
+    border-radius: 5px;
+}
+.conteudo a{
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    width: 300px;
+    height: 30px;
+    background-color: rgb(255, 0, 179);
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.conteudo a:hover{
+    background-color: rgb(192, 83, 159) ;
+}
+.box-lidas-single{
+    text-align: left;
+    
+}
+
+.box-lidas-single .conteudo h3{
+font-size: 20px;
+font-weight: 600;
+color: black;
+}
+
+.box-lidas-single a{
+    text-decoration: none;
+}
+
+.box{
+    display: flex;
+    padding: 10px 8px;
+
+}
+.box img{
+    width: 40%;
+    height: 150px;
+    border-radius: 10px;
+
+}
+.box .conteudo{
+    width: 60%;
+}
+
+.box .conteudo p{
+    font-size: 15px;
+    font-weight: lighter;
+    color:black;
+    
+}
+footer{
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 11.5px;
+
+}
+
+.title-destaque-description a{
+text-decoration: none;
+color: white;
+}
+section.Sigle{
+    background-color: purple;
+    padding: 50px 20px;
+    text-align: center;
+   
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+}
+.slug-box{
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.views{
+    font-size: 15px;
+    color: green;
+}
+.logo a{
+    text-decoration: none;
+}
+.box-single{
+    margin: 0 10px;
+    width: 55% ;
+    height: 100%;
+    padding: 8px 10px;
+    background-color: white;
+    border-radius:20px ;
+    flex-wrap: wrap;
+
+}
+.buscasSea{
+    width: 100%;
+}
+.buscaSea:hover{
+background-color: rgba(0, 0, 0, 0.336);
+border-bottom-left-radius:25px ;
+border-bottom-right-radius:25px ;
+}
+.box-single img {
+    width: 100%;
+    border-radius:20px ;
+}
+.box-single h2{
+    font-size: 25px;
+    margin-bottom:10px;
+}
+.conteudo_souza{
+    width: 100%;
+    padding: 5px 10px;
+    
+}
+
+.conteudo_souza p{
+    text-align: left;
+    line-height: 25px;
+}
+
+.buscasAr{
+padding: 10px;   
+height: 100%;
+ background-color: #eaeaee;
+}
+
+@media screen and (max-width:768px){
+    .logo,.form-buscas{
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+      
+    
+    .title-destaque-description h2 {
+        font-size: 25px;
+        margin: 20px 0;
+    }
+    .mais_lidas,.ultimas{
+        width: 100%;
+        margin-top: 10px;
+    }
+     .box-ultima-single{
+         width: 100%;
+         margin-bottom: 10px;
+     }
+
+     .box-single{
+         width: 100%;
+         margin-bottom:20px;
+     }
+}

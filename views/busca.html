@@ -1,0 +1,33 @@
+
+<%- include('partials/header.html') %>
+<section style="overflow: hidden;">
+    <div class="buscasAr">
+        <div  class="mais_lidas" style="width:40%;margin-left: auto; margin-right: auto;margin-top: 20px;padding-bottom: 20.5%;">
+            <div class="title">
+                <h3><%=contagem %> resultados</h3>
+            </div>
+            <div class="box-lidas-single" style="width: 100%;padding-bottom: auto;">
+                    <!--for pegando do banco de dados-->
+                <% for(let i = 0;i < posts.length ;i++){%>
+            <a href="<%=posts[i].slug %>">
+                <div class="box buscaSea">
+                <img style="width:40%;" src="<%=posts[i].imagem %>">
+                <div class="conteudo">
+                    <h3><%=posts[i].titulo %></h3>
+                    <p><%-posts[i].descricao %>...</p>
+                    <div class="views"><i class="fa fa-eye" aria-hidden="true"></i> (<%=posts[i].views %>)</div>
+               </div>
+               </div>
+            </a>
+            <%}%>
+
+               </div>
+        </div>
+    </div>
+   </div>
+</div>
+</section>
+
+<%- include('partials/footer.html') %>
+
+
